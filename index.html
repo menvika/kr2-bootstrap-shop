@@ -48,23 +48,42 @@
     <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">
-            Главная
-          </a>
+          <a class="nav-link active" href="index.html">Главная</a>
         </li>
+
         <li class="nav-item">
           <a class="nav-link" href="catalog.html">Каталог</a>
         </li>
+
         <li class="nav-item">
           <a class="nav-link" href="product.html">Товар</a>
         </li>
+
         <li class="nav-item">
           <a class="nav-link" href="order.html">Заявка</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Дополнительно
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="catalog.html">Все товары</a></li>
+            <li><a class="dropdown-item" href="order.html">Оформить заявку</a></li>
+            <li><a class="dropdown-item" href="index.html#popular">Популярное</a></li>
+          </ul>
         </li>
       </ul>
     </div>
   </div>
-  </nav>
+</nav>
+
   
   <main>
   <section class="container my-5">
@@ -177,6 +196,60 @@
     </div>
   </div>
 </section>
+<section class="container my-5">
+  <h2 class="h4 mb-3">Частые вопросы</h2>
+
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#faqOne"
+          aria-expanded="true"
+          aria-controls="faqOne"
+        >
+          Можно ли оформить заявку без регистрации?
+        </button>
+      </h3>
+      <div
+        id="faqOne"
+        class="accordion-collapse collapse show"
+        data-bs-parent="#faqAccordion"
+      >
+        <div class="accordion-body">
+          Да, в учебном проекте заявка оформляется без регистрации.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#faqTwo"
+          aria-expanded="false"
+          aria-controls="faqTwo"
+        >
+          Где используется Bootstrap?
+        </button>
+      </h3>
+      <div
+        id="faqTwo"
+        class="accordion-collapse collapse"
+        data-bs-parent="#faqAccordion"
+      >
+        <div class="accordion-body">
+          Bootstrap используется для сетки, карточек, форм, навигации, сообщений и модальных окон.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
 <footer class="bg-dark text-white py-4 mt-5">
   <div class="container">
