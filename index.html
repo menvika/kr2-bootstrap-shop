@@ -3,273 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/custom.css">
-  <title>Главная — Bootstrap Shop</title>
+  <title>Учебный интернет-магазин цветов</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Учебный интернет-магазин цветов">
+  <meta property="og:description" content="Учебный frontend-проект интернет-магазина цветов.">
+  <meta property="og:image" content="https://menvika.github.io/kr1-html-css-shop/images/catalog.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="images/icon.png" rel="icon" type="image/png">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
 </head>
-<body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-  </script>
-  <header class="bg-primary text-white py-4">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-12 col-md-8">
-        <h1 class="h3 mb-1">Bootstrap Shop</h1>
-        <p class="mb-0 opacity-75">
-          Учебный интернет-магазин на Bootstrap
-        </p>
-      </div>
-
-      <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
-        <span class="badge bg-light text-primary">
-          КР №2
-        </span>
-      </div>
-    </div>
-  </div>
-  </header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Bootstrap Shop</a>
-
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#mainNavbar"
-      aria-controls="mainNavbar"
-      aria-expanded="false"
-      aria-label="Переключить навигацию"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="mainNavbar">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="index.html">Главная</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="catalog.html">Каталог</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="product.html">Товар</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="order.html">Заявка</a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Дополнительно
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="catalog.html">Все товары</a></li>
-            <li><a class="dropdown-item" href="order.html">Оформить заявку</a></li>
-            <li><a class="dropdown-item" href="index.html#popular">Популярное</a></li>
+<body class="d-flex flex-column min-vh-100">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="index.html">FL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+            <li class="nav-item"><a class="nav-link" href="dostav.html">Доставка и оплата</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            <li class="nav-item">
+              <button class="btn btn-outline-primary rounded-pill p-2 lh-1" type="button" data-toast="Скоро тут будет корзина" aria-label="Корзина">
+                <i class="bi bi-cart fs-5"></i>
+              </button>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  
-  <main>
-  <section class="container my-5">
-    <div class="row align-items-center g-4">
-      <div class="col-12 col-lg-6">
-        <h2 class="display-5 fw-bold">
-          Учебный каталог товаров на Bootstrap
-        </h2>
-        <p class="lead text-muted">
-          Проект демонстрирует использование Bootstrap-сетки,
-          адаптивных колонок и базовых utility-классов.
-        </p>
-        <a class="btn btn-primary btn-lg" href="catalog.html">
-          Перейти в каталог
-        </a>
-      </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="p-5 bg-light border rounded text-center">
-          <p class="mb-0 text-muted">
-            Здесь может быть изображение, баннер или промо-блок.
-          </p>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <section class="container my-5">
-  <h2 class="text-center mb-4">Преимущества проекта</h2>
+    </nav>
+  </header>
 
-  <div class="row g-4">
-    <div class="col-12 col-md-4">
-      <div class="p-4 border rounded h-100 bg-white">
-        <h3 class="h5">Bootstrap-сетка</h3>
-        <p class="mb-0 text-muted">
-          Страница построена на 12-колоночной системе Bootstrap.
-        </p>
+  <main class="flex-grow-1">
+    <section class="container py-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="p-4 p-md-5 rounded-4 bg-light">
+            <h1 class="display-5 fw-bold mb-4">Учебный проект интернет-магазина букетов</h1>
+            <p class="lead mb-4">
+              Стартовая страница учебного frontend-проекта. В данный момент
+              используются 4 страницы и переход по якорным ссылкам.
+            </p>
+            <nav class="d-flex flex-wrap gap-3" aria-label="Разделы главной страницы">
+              <a href="#popular">Популярные товары</a>
+              <a href="#dopoln">Дополнительные услуги</a>
+            </nav>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="col-12 col-md-4">
-      <div class="p-4 border rounded h-100 bg-white">
-        <h3 class="h5">Адаптивность</h3>
-        <p class="mb-0 text-muted">
-          Колонки меняют ширину в зависимости от размера экрана.
-        </p>
-      </div>
-    </div>
+    <section id="popular">
+      <h2 class="text-center py-4">Популярные товары</h2>
 
-    <div class="col-12 col-md-4">
-      <div class="p-4 border rounded h-100 bg-white">
-        <h3 class="h5">Готовая база</h3>
-        <p class="mb-0 text-muted">
-          Проект подготовлен к добавлению карточек, форм и модальных окон.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+      <div id="popularCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#popularCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Букет 1"></button>
+          <button type="button" data-bs-target="#popularCarousel" data-bs-slide-to="1" aria-label="Букет 2"></button>
+          <button type="button" data-bs-target="#popularCarousel" data-bs-slide-to="2" aria-label="Букет 3"></button>
+        </div>
 
-<section class="container my-5">
-  <div class="d-flex justify-content-between align-items-center mb-4">
-    <h2 class="mb-0">Популярные товары</h2>
-    <a class="btn btn-outline-primary" href="catalog.html">
-      Все товары
-    </a>
-  </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active bg-black">
+            <img src="images/fl1.jpg" class="d-block w-100 object-fit-cover opacity-50" alt="Весенний букет">
+            <div class="carousel-caption pb-5">
+              <span class="badge text-bg-light mb-3">Популярное</span>
+              <h3 class="display-5 fw-bold">Весенний букет</h3>
+              <p>Нежность и свежесть в каждом цветке</p>
+              <p class="fs-3 fw-bold">7 200 ₽</p>
+              <a href="catalog.html" class="btn btn-light btn-lg rounded-pill">Подробнее</a>
+            </div>
+          </div>
 
-  <div class="row g-4">
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="border rounded h-100 p-4">
-        <span class="badge bg-success mb-3">Новинка</span>
-        <h3 class="h5">Товар 1</h3>
-        <p class="text-muted">
-          Краткое описание учебного товара.
-        </p>
-        <p class="fw-bold mb-3">1000 руб.</p>
-        <a class="btn btn-primary" href="product.html">
-          Подробнее
-        </a>
-      </div>
-    </div>
+          <div class="carousel-item bg-black">
+            <img src="images/fl2.jpg" class="d-block w-100 object-fit-cover opacity-50" alt="Моно-букет">
+            <div class="carousel-caption pb-5">
+              <span class="badge text-bg-light mb-3">Бестселлер</span>
+              <h3 class="display-5 fw-bold">Моно-букет</h3>
+              <p>Элегантная классика для особенного момента</p>
+              <p class="fs-3 fw-bold">8 100 ₽</p>
+              <a href="catalog.html" class="btn btn-light btn-lg rounded-pill">Подробнее</a>
+            </div>
+          </div>
 
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="border rounded h-100 p-4">
-        <span class="badge bg-warning text-dark mb-3">Хит</span>
-        <h3 class="h5">Товар 2</h3>
-        <p class="text-muted">
-          Краткое описание учебного товара.
-        </p>
-        <p class="fw-bold mb-3">1500 руб.</p>
-        <a class="btn btn-primary" href="product.html">
-          Подробнее
-        </a>
-      </div>
-    </div>
+          <div class="carousel-item bg-black">
+            <img src="images/fl3.jpg" class="d-block w-100 object-fit-cover opacity-50" alt="Букет в корзине">
+            <div class="carousel-caption pb-5">
+              <span class="badge text-bg-light mb-3">Особенный подарок</span>
+              <h3 class="display-5 fw-bold">Букет в корзине</h3>
+              <p>Эффектный подарок для незабываемых событий</p>
+              <p class="fs-3 fw-bold">12 700 ₽</p>
+              <a href="catalog.html" class="btn btn-light btn-lg rounded-pill">Подробнее</a>
+            </div>
+          </div>
+        </div>
 
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="border rounded h-100 p-4">
-        <span class="badge bg-danger mb-3">Скидка</span>
-        <h3 class="h5">Товар 3</h3>
-        <p class="text-muted">
-          Краткое описание учебного товара.
-        </p>
-        <p class="fw-bold mb-3">2000 руб.</p>
-        <a class="btn btn-primary" href="product.html">
-          Подробнее
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="container my-5">
-  <h2 class="h4 mb-3">Частые вопросы</h2>
-
-  <div class="accordion" id="faqAccordion">
-    <div class="accordion-item">
-      <h3 class="accordion-header">
-        <button
-          class="accordion-button"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#faqOne"
-          aria-expanded="true"
-          aria-controls="faqOne"
-        >
-          Можно ли оформить заявку без регистрации?
+        <button class="carousel-control-prev" type="button" data-bs-target="#popularCarousel" data-bs-slide="prev" aria-label="Предыдущий слайд">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </button>
-      </h3>
-      <div
-        id="faqOne"
-        class="accordion-collapse collapse show"
-        data-bs-parent="#faqAccordion"
-      >
-        <div class="accordion-body">
-          Да, в учебном проекте заявка оформляется без регистрации.
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h3 class="accordion-header">
-        <button
-          class="accordion-button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#faqTwo"
-          aria-expanded="false"
-          aria-controls="faqTwo"
-        >
-          Где используется Bootstrap?
+        <button class="carousel-control-next" type="button" data-bs-target="#popularCarousel" data-bs-slide="next" aria-label="Следующий слайд">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
-      </h3>
-      <div
-        id="faqTwo"
-        class="accordion-collapse collapse"
-        data-bs-parent="#faqAccordion"
-      >
-        <div class="accordion-body">
-          Bootstrap используется для сетки, карточек, форм, навигации, сообщений и модальных окон.
+      </div>
+    </section>
+
+    <section id="dopoln" class="container py-5">
+      <div class="text-center mb-5">
+        <h2 class="display-6 fw-bold">Дополнительные услуги</h2>
+        <p class="text-body-secondary">Сделайте ваш подарок ещё особенным</p>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <article class="card h-100 border-0 shadow-sm text-center">
+            <div class="card-body p-4">
+              <h3 class="card-title h5 fw-bold">Персональная открытка</h3>
+              <p class="card-text text-body-secondary">Напечатаем вашу подпись или тёплое послание на стильной открытке.</p>
+              <p class="fs-5 fw-bold text-primary-emphasis mb-0">500 ₽</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card h-100 border-0 shadow-sm text-center">
+            <div class="card-body p-4">
+              <h3 class="card-title h5 fw-bold">Сладкий подарок</h3>
+              <p class="card-text text-body-secondary">Добавим к букету конфеты, шоколад или десерт на ваш выбор.</p>
+              <p class="fs-5 fw-bold text-primary-emphasis mb-0">От 700 ₽</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card h-100 border-0 shadow-sm text-center">
+            <div class="card-body p-4">
+              <h3 class="card-title h5 fw-bold">Анонимная доставка</h3>
+              <p class="card-text text-body-secondary">Доставим подарок так, чтобы получатель не узнал отправителя.</p>
+              <p class="fs-5 fw-bold text-primary-emphasis mb-0">100 ₽</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card h-100 border-0 shadow-sm text-center">
+            <div class="card-body p-4">
+              <h3 class="card-title h5 fw-bold">Цветочная подписка</h3>
+              <p class="card-text text-body-secondary">Регулярные доставки свежих букетов каждую неделю или месяц.</p>
+              <p class="fs-5 fw-bold text-primary-emphasis mb-0">От 2 500 ₽</p>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
+  </main>
+
+  <footer class="bg-light border-top text-center text-primary-emphasis small py-4 mt-5">
+    <div class="container">
+      <p class="mb-1">&copy; 2026 Учебный проект. Все права защищены.</p>
+      <p class="mb-0 opacity-75">Дисциплина: Фронтенд и бэкенд разработка</p>
     </div>
-  </div>
-</section>
+  </footer>
 
-</main>
-<footer class="bg-dark text-white py-4 mt-5">
-  <div class="container">
-    <div class="row align-items-center g-3">
-      <div class="col-12 col-md-6">
-        <p class="mb-0">
-          &copy; 2026 Bootstrap Shop. Учебный проект.
-        </p>
-      </div>
-
-      <div class="col-12 col-md-6 text-md-end">
-        <a class="text-white text-decoration-none me-3" href="catalog.html">
-          Каталог
-        </a>
-        <a class="text-white text-decoration-none" href="order.html">
-          Заявка
-        </a>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="toast" class="toast text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true" data-bs-delay="2500">
+      <div class="d-flex align-items-center">
+        <img src="images/cat_toast1.gif" alt="" width="40" height="40" class="ms-2 object-fit-cover">
+        <div id="toast-text" class="toast-body fw-semibold"></div>
       </div>
     </div>
   </div>
-</footer>
 </body>
 </html>
